@@ -2,7 +2,7 @@
 
 A small dashboard to find, search and recommend developer tools, sites and tutorials. Built for the GDG on Campus AITR web developer recruitment task (Task 3).
 
-**Live demo:** ADD-YOUR-VERCEL-LINK-HERE
+**Live demo:** developer-resource-hub-lac.vercel.app
 
 ## Features
 
@@ -21,7 +21,7 @@ HTML, CSS and vanilla JavaScript. No frameworks and no build step.
 
 ## Setup
 
-1. Clone the repo: `git clone ADD-YOUR-REPO-URL`
+1. Clone the repo: `git clone https://github.com/pranayg7164/gdg-recruitment-task`
 2. Open `index.html` in a browser. That's it.
 
 ## How it works
