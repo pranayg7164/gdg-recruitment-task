@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Developer Resource Hub</title>
+  <meta name="description" content="Find, search and share developer tools, sites and tutorials.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Developer Resource Hub</h1>
+      <p>Tools, sites and tutorials our community recommends.</p>
+    </div>
+    <button id="themeToggle" class="ghost" aria-label="Switch between dark and light mode">Dark mode</button>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Search and filter">
+      <input id="search" type="search" placeholder="Search by title, description or category" aria-label="Search resources">
+      <div id="filters" class="filters" role="group" aria-label="Filter by category"></div>
+    </section>
+
+    <section id="list" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden>No resources match. Try another keyword or add one below.</p>
+
+    <section class="add" aria-labelledby="addTitle">
+      <h2 id="addTitle">Add a resource</h2>
+      <form id="addForm" novalidate>
+        <label>Title
+          <input id="title" required maxlength="60" placeholder="e.g. MDN Web Docs">
+        </label>
+        <label>Category
+          <select id="category" required>
+            <option>Web Dev</option>
+            <option>App Dev</option>
+            <option>AI/ML</option>
+            <option>Tools</option>
+          </select>
+        </label>
+        <label class="wide">Description
+          <textarea id="description" required maxlength="160" rows="2" placeholder="What is it and why is it useful?"></textarea>
+        </label>
+        <label class="wide">Link
+          <input id="link" type="url" required placeholder="https://developer.mozilla.org">
+        </label>
+        <p id="formError" class="error" role="alert" hidden></p>
+        <button type="submit" class="primary">Add resource</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
